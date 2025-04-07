@@ -1,0 +1,7 @@
+services:
+  scraper:
+    build: .
+    environment:
+      - URL=${URL}
+    volumes:
+      - ./download:/usr/src/app/download
